@@ -1,12 +1,15 @@
 import React, { useEffect, useState } from "react"
 
-const counterNumerSize = {
+const counterNumer = {
     fontSize: "5.5rem",
     fontWeight: "700"
 }
 
-const counterNameSize = {
-    fontSize: "1rem"
+const counterName = {
+    fontSize: "1rem",
+    fontWeight: "700",
+    color: "snow",
+    letterSpacing: "0.2rem"
 }
 
 
@@ -47,43 +50,43 @@ const Counter = () => {
     return (
         <div className="w-75 d-flex justify-content-around flex-wrap" style={{ marginTop: "7rem", marginBottom: "27rem" }}>
 
-            <div>
-                <h1 style={counterNumerSize}>
+            <div >
+                <h1 style={counterNumer}>
                     {monthNow}
                 </h1>
-                <div style={counterNameSize}>
+                <div style={counterName}>
                     <p>months</p>
                 </div>
             </div>
             <div>
-                <h1 style={counterNumerSize}>
+                <h1 style={counterNumer}>
                     {counters.days}
                 </h1>
-                <div style={counterNameSize}>
+                <div style={counterName}>
                     <p>days</p>
                 </div>
             </div>
             <div>
-                <h1 style={counterNumerSize}>
+                <h1 style={counterNumer}>
                     {counters.hours}
                 </h1>
-                <div style={counterNameSize}>
+                <div style={counterName}>
                     <p>hours</p>
                 </div>
             </div>
             <div>
-                <h1 style={counterNumerSize}>
+                <h1 style={counterNumer}>
                     {counters.minutes}
                 </h1>
-                <div style={counterNameSize}>
+                <div style={counterName}>
                     <p>minutes</p>
                 </div>
             </div>
             <div>
-                <h1 style={counterNumerSize}>
+                <h1 style={counterNumer}>
                     {counters.seconds}
                 </h1>
-                <div style={counterNameSize}>
+                <div style={counterName}>
                     <p>seconds</p>
                 </div>
             </div>

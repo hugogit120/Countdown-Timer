@@ -9,7 +9,7 @@ const divStyle = {
 function App() {
   return (
     <div className="App d-flex flex-column justify-content-center align-items-center" style={divStyle}>
-      <h1 className="animated fadeInDownBig">Countdown to New Year 2021</h1>
+      <h1 className="animated fadeInDownBig" style={{ fontFamily: "Arvo, serif", fontWeight: "700" }}>Countdown to New Year 2021</h1>
       <Counter />
     </div>
   );
